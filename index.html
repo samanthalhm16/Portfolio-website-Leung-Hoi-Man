@@ -13,20 +13,20 @@
 
 <body>
   <header>
-    <div>
-      <img src="img/logo.svg" alt="my-logo">
+    <div class="container">
+      <img src="img/mylogo.svg" class="logo" alt="my-logo">
       <nav>
         <ul>
-          <li><a href="index.html" id="button">Work</a></li>
-          <li><a href="about.html" id="button">About Me</a></li>
-          <li><a href="#contact" id="button">Contact</a></li>
+          <li><a href="index.html">Work</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main>
-    <div>
-      <div>
+    <div id="hero"><!-- hero section -->
+      <div class="container">
         <h1>Hi, my name is Samantha Leung. <span class="makeUppercase">A UI/UX designer</span> based in Hong Kong</h1>
         <p>
           I’m passionate about creating usable digital products. I am studying the UX course in CareerFoundry and working as a UI/UX Designer in a startup fintech company called iPYGG.
@@ -34,10 +34,10 @@
         <a href="#contact">Contact me</a>
       </div>
     </div>
-    <div>
-      <div>
+    <div id="work"><!-- work section -->
+      <div class="container">
         <h2>Portfolio</h2>
-        <div>
+        <div class="row">
           <div>
             <picture>
               <source srcset="img/plutopay/plutopay_intro@1.jpg" media="(max-width:767px)">
@@ -56,8 +56,8 @@
     </div>
 
   </main>
-  <footer id="contact">
-    <div>
+  <footer id=contact>
+    <div class="container">
       <h2> Let's work together </h2>
       <p>
         If you are interested in my work, please get in touch.

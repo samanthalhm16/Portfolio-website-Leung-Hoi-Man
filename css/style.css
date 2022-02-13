@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;;
+}
 body {
   background-color: #ffffff;
   font-family: 'Lato', sans-serif;
@@ -11,7 +14,7 @@ h1, h2, h3, h4 {
   line-height: 1.4;
 }
 h1 {
-  font-size: 2.50em;
+  font-size: 2.25em;
   font-weight: 700;
 }
 
@@ -42,19 +45,19 @@ a {
   text-decoration: none; /* No underlining */
 }
 
-a:hover,
-a:focus {
+nav > ul > li > a:active { /* selected link */
+  color: #994c30;
+}
+
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
   color: #cc6540;
   text-decoration: underline;
 }
 
-a:visited { /* visited link */
+nav > ul > li > a:visited { /* visited link */
   color: #737373;
 }
-a:active { /* selected link */
-  color: #994c30;
-}
-
 
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
@@ -88,8 +91,90 @@ a:active { /* selected link */
 
 .svg-inline--fa.fa-linkedin {
 color: #0077b5;
+width: 40px;
+padding: 10px 0;
 }
 
 #button {
   color: #ffba34
+}
+
+header {
+  background-color: #e3e3e3;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.4);
+  position: fixed;
+  width: 100%;
+}
+
+selector {
+  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;/* 25px top and bottom, 0 left and right */
+}
+
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+
+#hero h1 {
+  text-align: center;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul >li {
+display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4f4f4f;
+}
+
+nav {
+  width: 100%;
+}
+
+#hero {
+  background-color: #dbe5ee;
+}
+
+#hero {
+  background-color: #dbe5ee;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+main {
+  padding-top: 133px;
+}
+
+footer {
+  background-color: #f2f2f2;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+#skills {
+    background-color: #dbe5ee;
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px
 }
