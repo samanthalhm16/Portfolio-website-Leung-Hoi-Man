@@ -7,20 +7,25 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--CDN code for fontawesome hamburger menu icon -->
+<script src="https://kit.fontawesome.com/86d328994e.js" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body id="about-me">
   <header>
     <div class="container">
-      <img src="img/mylogo.svg" class="logo" alt="my-logo">
-      <nav>
-        <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoogle">
+        <img src="img/mylogo.svg" class="logo" alt="my-logo">
+        <nav>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="#contact"; onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <main>
@@ -36,45 +41,45 @@
           <img src="img/my_photo@2.jpg" alt="My Photo">
         </picture>
       </div>
-          <div class="container">
-            <h2>My Story</h2>
-            <p>I’m a UI/UX designer. I’m passionate about creating usable digital products. I am studying the UX course in CareerFoundry and working as a UI/UX Designer in a startup fintech company called iPYGG. Currently, I am working on many
-              ongoing projects including new app and website development.</p>
-            <p>My colleagues have described me as a all-rounded team player that is suitable in collaborative environments. I look forward to joining new projects and working with different teams</p>
-            <div>
-              <a href="files/cv.pdf" download target=_"blank" class="button">Download my CV</a>
+      <div class="container">
+        <h2>My Story</h2>
+        <p>I’m a UI/UX designer. I’m passionate about creating usable digital products. I am studying the UX course in CareerFoundry and working as a UI/UX Designer in a startup fintech company called iPYGG. Currently, I am working on many
+          ongoing projects including new app and website development.</p>
+        <p>My colleagues have described me as a all-rounded team player that is suitable in collaborative environments. I look forward to joining new projects and working with different teams</p>
+        <div>
+          <a href="files/cv.pdf" download target=_"blank" class="button">Download my CV</a>
+        </div>
+      </div>
+      <div id="skills">
+        <div class="container">
+          <h2>Skills & Tools</h2>
+          <div>
+            <div class="col-md-6">
+              <h3>Relavant Skills</h3>
+              <ul>
+                <li>User Research (Competitor Analysis, User Interviews, Data Analysis)</li>
+                <li>Creating User Personas</li>
+                <li>User Flows</li>
+                <li>Product Branding</li>
+                <li>Style Guides</li>
+                <li>Prototyping (Low, Medium and High-Fidelity Wireframes)</li>
+              </ul>
             </div>
           </div>
-          <div id="skills">
-          <div class="container">
-            <h2>Skills & Tools</h2>
-            <div>
-              <div class="col-md-6">
-                <h3>Relavant Skills</h3>
-                <ul>
-                  <li>User Research (Competitor Analysis, User Interviews, Data Analysis)</li>
-                  <li>Creating User Personas</li>
-                  <li>User Flows</li>
-                  <li>Product Branding</li>
-                  <li>Style Guides</li>
-                  <li>Prototyping (Low, Medium and High-Fidelity Wireframes)</li>
-                </ul>
-              </div>
-            </div>
-              <div class="col-md-6">
-                <h3>Tools I use</h3>
-                <ul>
-                  <li>Adobe Photoshop</li>
-                  <li>Adobe Indesign</li>
-                  <li>Adobe Illustrator</li>
-                  <li>Figma</li>
-                  <li>Sketch</li>
-                </ul>
-              </div>
-            </div>
+          <div class="col-md-6">
+            <h3>Tools I use</h3>
+            <ul>
+              <li>Adobe Photoshop</li>
+              <li>Adobe Indesign</li>
+              <li>Adobe Illustrator</li>
+              <li>Figma</li>
+              <li>Sketch</li>
+            </ul>
           </div>
         </div>
       </div>
+    </div>
+    </div>
     </div>
 
   </main>
@@ -98,4 +103,6 @@
       </div>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 </body>
