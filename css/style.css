@@ -174,9 +174,9 @@ header {
 
 .navtoggle.responsive li  {
   display: block;
-  text-align: right;
+  text-align: center;
   padding: 10px 0;
-  border-top: 1.5px solid rgba(255,127,80,0.5);
+  border-top: 1.5px solid #c4c4c4;
 }
 
 .navtoggle.responsive li:last-child  {
