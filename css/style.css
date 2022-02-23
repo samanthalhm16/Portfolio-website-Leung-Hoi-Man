@@ -11,7 +11,10 @@ body {
   color: #4a4a4a;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.4;
 }
 
@@ -53,47 +56,57 @@ img {
 
 a {
   color: #ff7f50;
+  background-color: #e3e3e3;
   text-decoration: none;
+
   /* No underlining */
 }
 
 a:visited {
   /* visited link */
   color: #737373;
+  background-color: #e3e3e3;
 }
 
 a:hover,
 a:focus {
   color: #cc6540;
   text-decoration: underline;
+  background-color: #e3e3e3;
 }
 
 a:active {
   /* selected link */
   color: #994c30;
+  background-color: #e3e3e3;
 }
 
-nav>ul>li>a:visited {
+nav > ul > li > a:visited {
   /* visited link */
   color: #737373;
+  background-color: transparent;
 }
 
-nav>ul>li>a:hover,
-nav>ul>li>a:focus {
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
   color: #cc6540;
+  background-color: transparent;
   text-decoration: underline;
 }
 
-nav>ul>li>a:active {
+nav > ul > li > a:active {
   /* selected link */
   color: #994c30;
+  background-color: transparent;
 }
 
 .button {
   display: inline-block;
+
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #ffba34;
-  color: #ffffff;
+  color: #535353;
+
   /* needed to override the default link color */
   font-weight: 400;
   text-decoration: none;
@@ -106,42 +119,48 @@ nav>ul>li>a:active {
 .button:hover,
 .button:focus {
   opacity: 0.8;
+
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
 
 .button.contact {
   background-color: transparent;
-  color: #ffba34;
+  color: #A26B00;
   text-transform: uppercase;
-  border: 2px solid #ffba34;
+  border: 2px solid #A26B00;
   transition: 0.2s opacity;
 }
 
 .button.contact:hover,
 .button.contact:focus {
   opacity: 0.5;
+
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
 
 .svg-inline--fa.fa-linkedin {
   color: #0077b5;
+  background-color: transparent;
   width: 40px;
   padding: 10px 0;
 }
 
 #button {
   color: #ffba34;
+  background-color: transparent;
 }
 
 header {
   background-color: #e3e3e3;
+  color: #000000;
   padding: 10px 0 4px;
-  box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.4);
+  box-shadow: 0 5px 10px 0 rgba(50, 50, 50, 0.4);
   position: fixed;
   width: 100%;
 }
+
 /* Navigation items are hidden except menu icon for screens less than 640px, small screens */
 .navtoggle li:not(:last-child) {
   display: none;
@@ -153,15 +172,18 @@ header {
 .navtoggle.responsive {
   position: relative;
 }
-/* Menu bar icon*/
+
+/* Menu bar icon */
 .navtoggle li .icon {
   position: absolute;
   right: 0;
   top: 5px;
   font-size: 20px;
-  padding-right: 10
+  padding-right: 10px;
   color: #000000;
+  background-color: transparent;
 }
+
 /* Will override when responsive class is toggled */
 .navtoggle.responsive li {
   display: block;
@@ -172,14 +194,14 @@ header {
   padding: 24px 0 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   text-align: center;
   padding: 10px 0;
   border-top: 1.5px solid #c4c4c4;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -189,6 +211,7 @@ header {
 
 .row {
   margin: 25px 0;
+
   /* 25px top and bottom, 0 left and right */
 }
 
@@ -205,17 +228,18 @@ header {
   max-width: 150px;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4f4f4f;
+  background-color: transparent;
 }
 
 #hero {
@@ -224,6 +248,7 @@ nav>ul>li>a {
 
 #hero {
   background-color: #dbe5ee;
+  color: #000000;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -235,6 +260,7 @@ main {
 
 footer {
   background-color: #f2f2f2;
+  color: #222222;
   text-align: center;
   display: inline-block;
   width: 100%;
@@ -242,6 +268,7 @@ footer {
 
 #skills {
   background-color: #dbe5ee;
+  color: #000000;
   display: inline-block;
   width: 100%;
   margin-top: 10px;
@@ -278,28 +305,27 @@ Medium devices (640px and larger)
     min-width: 250px;
   }
 
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
   }
 
-/* Removes menu icon for screens larger than 640px */
-.navtoggle li:not(:last-child) {
-  display: inline-block;
-}
+  /* Removes menu icon for screens larger than 640px */
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
 
-/* Removes menu icon for screens larger than 640px */
-.navtoggle li:last-child {
-display: none;
-}
+  /* Removes menu icon for screens larger than 640px */
+  .navtoggle li:last-child {
+    display: none;
+  }
 
-nav > ul {
-margin: 1em 0;
-}
+  nav > ul {
+    margin: 1em 0;
+  }
 
-.navtoggle.responsive li {
-  border-top: 0;
-}
-
+  .navtoggle.responsive li {
+    border-top: 0;
+  }
 }
 
 /* ==============================
@@ -320,82 +346,75 @@ Large devices (1024px or larger)
     margin-right: auto;
   }
 
-main {
-  padding-top: 104px;
-}
+  main {
+    padding-top: 104px;
+  }
 
-/* ==============================
+  /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {}
+  @media only screen and (min-width: 1440px) {}
 
-#hero span {
-  display: block;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 10px;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-#about-page h3 {
-  margin-top: 0;
-}
-
-.berlin-illustration {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-
-@keyframes color-change {
-  0% {
-    fill: #edc655;
+  #hero span {
+    display: block;
   }
 
-  50% {
-    fill: #fcffad;
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
   }
 
-  100% {
-    fill: #f76414;
-  }
-}
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
   }
 
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
+  #about-page h3 {
+    margin-top: 0;
   }
 
-  to {
-    transform: translate(100px, 48px);
+  .berlin-illustration {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
-}
 
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
+  @keyframes color-change {
+    0% {fill: #edc655;}
+    50% {fill: #fcffad;}
+    100% {fill: #f76414;}
+  }
+
+  .sun {
+    animation: 4s color-change infinite alternate linear;
+  }
+
+  @keyframes cloud-move {
+    from {
+      transform: translate(0, 50px);
+    }
+
+    to {
+      transform: translate(200px, 50px);
+    }
+  }
+
+  .cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+  }
+
+  @keyframes cloud-move-reverse {
+    from {
+      transform: translate(446px, 48px);
+    }
+
+    to {
+      transform: translate(100px, 48px);
+    }
+  }
+
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+  }
 }
