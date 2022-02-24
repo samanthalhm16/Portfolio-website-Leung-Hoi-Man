@@ -340,6 +340,10 @@ Large devices (1024px or larger)
     width: 41.66%;
   }
 
+  .col-lg-6 {
+    width: 50%;
+  }
+
   .container {
     max-width: 1200px;
     margin-left: auto;
