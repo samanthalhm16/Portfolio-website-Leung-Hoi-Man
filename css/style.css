@@ -161,6 +161,13 @@ header {
   width: 100%;
 }
 
+.myphoto {
+  max-width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Navigation items are hidden except menu icon for screens less than 640px, small screens */
 .navtoggle li:not(:last-child) {
   display: none;
