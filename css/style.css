@@ -278,6 +278,10 @@ footer {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  .col-md-6 {
+    width: 50%;
+  }
+
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -295,10 +299,6 @@ Medium devices (640px and larger)
 
   body {
     font-size: 18px;
-  }
-
-  .col-md-6 {
-    width: 50%;
   }
 
   .logo {
